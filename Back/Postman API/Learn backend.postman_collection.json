@@ -1,0 +1,638 @@
+{
+	"info": {
+		"_postman_id": "547c91a4-be17-4aa0-854f-421876a54251",
+		"name": "Learn backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26794671"
+	},
+	"item": [
+		{
+			"name": "Authntication",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"mohauhsdsdasd\",\r\n    \"password\": \"987654321\",\r\n    \"email\": \"llll@yahoo.com\",\r\n    \"roleId\": \"3\",\r\n    \"phone\": \"45245774527\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Log in",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\": \"987654321\",\r\n    \"email\": \"ppppp@yahoo.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Courses",
+			"item": [
+				{
+					"name": "Admin",
+					"item": [
+						{
+							"name": "create instractor",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "bab352ebe250c93e49c69543d0527874",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"ahmed mohamemd\",\r\n    \"password\": \"1478521245\",\r\n    \"email\": \"ahmed123@yahoo.com\",\r\n    \"phone\": \"0147852369\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/Instructor/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"Instructor",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create course",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "bab352ebe250c93e49c69543d0527874",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Software 4",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "haakna matata haakna mata",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/moham/Downloads/download.jpg"
+										},
+										{
+											"key": "code",
+											"value": "CS-1244",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:4000/Courses",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"Courses"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update instractor",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "token",
+										"value": "bab352ebe250c93e49c69543d0527874",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"ahmed mohamemd\",\r\n    \"password\": \"1478521245\",\r\n    \"email\": \"ahmed123@yahoo.com\",\r\n    \"phone\": \"0147852369\"\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/instructor/36",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"instructor",
+										"36"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete instructor",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "token",
+										"value": "bab352ebe250c93e49c69543d0527874",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:4000/instructor/7",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"instructor",
+										"7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update course",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "token",
+										"value": "bab352ebe250c93e49c69543d0527874",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:4000/Courses/14",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"Courses",
+										"14"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete course",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "token",
+										"value": "bab352ebe250c93e49c69543d0527874",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "http://localhost:4000/Courses/14",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"Courses",
+										"14"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "assign instructor",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "bab352ebe250c93e49c69543d0527874",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"courseId\": 9,\r\n    \"instructorId\": 40\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/Assign/teching",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"Assign",
+										"teching"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Users",
+					"item": [
+						{
+							"name": "list course",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/Courses?search=CS-1244",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"Courses"
+									],
+									"query": [
+										{
+											"key": "search",
+											"value": "CS-1244"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Insturactor",
+					"item": [
+						{
+							"name": "list instractor",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/SetGrades?search=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"SetGrades"
+									],
+									"query": [
+										{
+											"key": "search",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "grade",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "token",
+										"value": "742466a3edd0d6030b937ccdacf621fb",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"grade\": 90\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/Assign/grade/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"Assign",
+										"grade",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "lesson create",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "9ebf84a42b1c1bd9ad6b42ec58ea62af",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Information",
+											"type": "text"
+										},
+										{
+											"key": "video",
+											"type": "file",
+											"src": "/C:/Users/moham/Downloads/pexels-eugenia-remark-15537623-1080x1920-60fps.mp4"
+										},
+										{
+											"key": "courseId",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:4000/lesson",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"lesson"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update lesson",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "token",
+										"value": "9ebf84a42b1c1bd9ad6b42ec58ea62af",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "mmmmm",
+											"type": "text"
+										},
+										{
+											"key": "content",
+											"type": "file",
+											"src": "/C:/Users/moham/Downloads/pexels-eugenia-remark-15537623-1080x1920-60fps.mp4"
+										},
+										{
+											"key": "courseId",
+											"value": "3",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:4000/lesson/11",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"lesson",
+										"11"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete lesson",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "token",
+										"value": "9ebf84a42b1c1bd9ad6b42ec58ea62af",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:4000/lesson/11",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"lesson",
+										"11"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getStudent",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/getstudent/46",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"getstudent",
+										"46"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getCourse",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/getCourses/11",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"getCourses",
+										"11"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Student",
+					"item": [
+						{
+							"name": "enrollment",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "92f922cd9bd02a04903212043ddb4d44",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"studentId\": 8,\r\n    \"courseId\": 4\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/enroll/enroll/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"enroll",
+										"enroll",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "showGrade",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/showGrade/12",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"showGrade",
+										"12"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
