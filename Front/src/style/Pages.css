@@ -1,0 +1,39 @@
+.block{
+    margin-top: 8%;
+    margin-left: 380px;
+    justify-content: left;
+    text-align: center;
+}
+.header {
+    display: flex;
+    width: 82%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 2%;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: flex-end;
+}
+button{
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    border: 0px;
+}
+form .btn-dark{
+    margin-right: 22%;
+}
+.btn-dark:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+.form-control{
+    width: 78%;
+}
+.form-container{
+    margin-left: 5%;
+    display: contents;}
+.loading{
+    margin-top: 20%;
+}

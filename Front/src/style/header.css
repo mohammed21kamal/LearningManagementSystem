@@ -1,0 +1,14 @@
+.Header{
+    background-color:#44a1a0;
+    color: #fff;
+}
+.navbar{
+    background-color: #29898a;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    display: inline-flex;
+    width: 100%;
+    flex-direction: row;
+}

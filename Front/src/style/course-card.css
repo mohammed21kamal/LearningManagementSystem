@@ -1,0 +1,43 @@
+.card-image {
+height: 250px;
+}
+/* .btn-success{
+background-color:#44a1a0 ;
+border-color: #44a1a0;
+
+}
+.btn-success:hover{
+background-color:#44a1a0 ;
+border-color: #44a1a0; */
+
+/* } */
+.card{
+
+margin-top: 25px;
+}
+.btn-success,.btn-success1 {
+display: flex;
+justify-content: center;
+width: 135px;
+height: 40px;
+border: 5px solid #216869;
+border-radius: 5px;
+background-color: #216869;
+color: #fff;
+font-weight:lighter;
+align-items: center;
+}
+.btn-success1{
+margin-left: 30px;
+}
+
+.btn-success:hover{
+background-color: aliceblue;
+border:2px solid #388697;
+color: #388697;
+}
+.btn-success1:hover{
+background-color: aliceblue;
+border:2px solid #388697;
+color: #388697;
+}

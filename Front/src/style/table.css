@@ -1,0 +1,49 @@
+.container table{
+    position: relative;
+    text-align: center ;
+    font-size: 20px;
+    border: 1px solid;
+    width: 82%;
+    margin-left: 2%;
+}
+
+.container table th{
+    border: 1px solid;
+}
+.button{    
+    background-color: rgb(213, 215, 223);
+    color: black;
+    margin: 0 10px;
+    padding: 3px 3px;
+    border-radius: 10px;
+    font-size: 20px;
+    display: inline-flex;
+}
+.assign-link{
+    display: inline-flex;
+    padding-top: 5px;
+}
+.button:hover{
+    background-color: rgb(30, 32, 33);
+    color: rgb(213, 215, 223);
+}
+.table-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+.switch.btn-xs{
+    margin: auto 0px;
+}
+.action{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 0px;
+}
+td{
+    padding: 6px 0px!important
+}
+.course-cell{
+    padding: 0px 15px!important;
+    padding-top: 15px!important;
+}

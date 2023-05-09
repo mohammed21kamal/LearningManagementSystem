@@ -1,0 +1,78 @@
+.login {
+    background-image: url(../asset/images/kilarov-zaneit-rPDbvmpD7H4-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding-bottom: 22%;
+    flex-direction: row-reverse;
+}
+.login parent{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    width: 431px;
+    height: 365px;
+    justify-content: flex-end;
+    align-items: baseline;
+    margin-top: 8%;
+    border-radius: 17px;
+    padding: 10px 17px;
+}
+.login form input {
+    width: 95%;
+    height: 30px;
+    border-radius: 5px;
+    padding: 8px;
+    border: none;
+    background: none;
+    margin-bottom: 4px;
+    margin-left: 5px;
+}
+.login form  button {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    border: 5px solid #216869;
+    border-radius: 5px;
+    background-color: #216869;
+    color: #fff;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.login form  button:hover{
+    background: none;
+    border:2px solid #388697;
+    color: #388697;
+}
+.login form .error{
+    color: red;
+    font-size: 14px;
+    margin-top: 0;
+}
+.login-button {
+    display: flex!important;
+    flex-direction: column;
+    align-items: flex-start!important;
+}
+.login-button a{
+    margin-top: 15px;
+    width: fit-content;
+}
+.login-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: fit-content;
+    border-bottom: 1px solid;
+    margin: 15px 0px ;
+}

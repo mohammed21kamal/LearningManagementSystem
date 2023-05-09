@@ -1,0 +1,52 @@
+.courses{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+.spin{
+  text-align: center;
+  margin-top: 300px;
+
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .search-container form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search-container input[type="text"] {
+    background-color: #f0efeb;
+    padding: 10px;
+    width: 500px;
+    height:50px ;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+  }
+  
+  .search-container button[type="submit"] {
+    padding: 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color:#44a1a0 ;
+    color: #fff;
+    width: 100px;
+  }
+  
+  .search-container form:focus-within input[type="text"] {
+    background-color: #f0efeb;
+  }

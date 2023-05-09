@@ -1,0 +1,89 @@
+.auth-body{
+    background-image: url(../asset/images/kilarov-zaneit-rPDbvmpD7H4-unsplash.jpg);
+    background-size: cover;
+    height: 100;
+}
+.sign-up {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding-bottom: 15%;
+    flex-direction: row-reverse;
+}
+
+.sign-up parent {
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+}
+.sign-up form {
+    display: flex;
+    flex-direction: column;
+    width: 475px;
+    margin-top: 150px;
+    height: 500px;
+    justify-content: space-around;
+    border-radius: 1px;
+    padding: 10px;
+}
+
+.sign-up form input,
+select {
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+}
+.sign-up form button {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #216869;
+    color: #fff;
+    font-weight: lighter;
+    align-items: center;
+    margin-top: 30px;
+}
+.sign-up form button:hover {
+    background: none;
+    color: #388697;
+    border: 2px solid #388697;
+}
+
+.sign-up form .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 0
+}
+.signup-input{    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: fit-content;
+    border-bottom: 1px solid;
+}
+.signup-input input{
+    border: none;
+    outline: none;
+    background: none;
+    border: none;
+    outline: none;
+}
+select{
+    word-wrap: normal;
+    height: fit-content !important;
+    width: fit-content!important;
+    background: none;
+    border: none;
+}
+.signup-button {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.signup-button a{
+    margin-top: 15px;
+    width: fit-content;
+}

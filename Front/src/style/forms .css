@@ -1,0 +1,75 @@
+form{
+    font-size: 20px;
+    font-weight: bolder;
+    text-align:left;
+}
+button{
+    float: right;
+    font-size: 20px;
+}
+.form-title {
+    padding: 15px;
+    background-color: #73d7ed;
+    color: rgb(0, 0, 0);
+    display: inline-flex;
+    border: 3px solid black;
+    border-radius: 0px 15px;
+    float: left;
+    width: fit-content;
+}
+.check-list {
+    display: flex;
+    margin-top: 10%;
+    padding: 0px;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+.form-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-top: 0px;
+}
+.alert{
+    position: initial;
+    margin: 5px 0px;
+    width: 88%;
+    padding: 2px;
+}
+
+.assign-body {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+    margin-top: 25px;
+    margin-right: 14%;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 3px solid;
+    border-radius: 11px;
+    margin-left: 14%;
+    background: #ddd;
+}
+.assign-form{
+    border: 1px solid;
+    margin-bottom: 10px;
+    border-radius: 11px;
+    padding: 10px;
+    background-color: #bbb;
+    width: 40%;
+}
+.form-check-inline {
+    display: table;
+    font-weight: bold;
+    font-size: large;
+    margin-right: 1rem;
+}
+.assign-btn{
+    display: inline-flex;
+    margin-bottom: 8px;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+}
